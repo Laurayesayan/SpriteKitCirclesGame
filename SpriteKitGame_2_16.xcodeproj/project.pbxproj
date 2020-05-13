@@ -13,6 +13,7 @@
 		F7BF0554246B3BE3007D17DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BF0552246B3BE3007D17DC /* Main.storyboard */; };
 		F7BF0556246B3BE5007D17DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BF0555246B3BE5007D17DC /* Assets.xcassets */; };
 		F7BF0559246B3BE5007D17DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BF0557246B3BE5007D17DC /* LaunchScreen.storyboard */; };
+		F7D49295246C913A001ACD34 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D49294246C913A001ACD34 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F7BF0555246B3BE5007D17DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7BF0558246B3BE5007D17DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7BF055A246B3BE5007D17DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D49294246C913A001ACD34 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				F7BF0548246B3BE3007D17DC /* AppDelegate.swift */,
 				F7BF054E246B3BE3007D17DC /* GameScene.swift */,
+				F7D49294246C913A001ACD34 /* GameOverScene.swift */,
 				F7BF0550246B3BE3007D17DC /* GameViewController.swift */,
 				F7BF0552246B3BE3007D17DC /* Main.storyboard */,
 				F7BF0555246B3BE5007D17DC /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			files = (
 				F7BF054F246B3BE3007D17DC /* GameScene.swift in Sources */,
 				F7BF0551246B3BE3007D17DC /* GameViewController.swift in Sources */,
+				F7D49295246C913A001ACD34 /* GameOverScene.swift in Sources */,
 				F7BF0549246B3BE3007D17DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

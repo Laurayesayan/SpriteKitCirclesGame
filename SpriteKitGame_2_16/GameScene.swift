@@ -34,6 +34,18 @@ class GameScene: SKScene {
         super.touchesEnded(touches, with: event)
         
         move(node: player, to: (touches.first?.location(in: self))!, completion: nil)
+
+    }
+    
+    override func didEvaluateActions() {
+        super.didEvaluateActions()
+        if player.intersects(enemy) {
+            let gameOverScene = GameOverScene(size: size)
+            gameOverScene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+            let appearance = SKTransition.flipHorizontal(withDuration: 0.5)
+            self.removeFromParent()
+            view?.presentScene(gameOverScene, transition: appearance)
+        }
     }
     
     func createLabelNode(text: String, position: CGPoint) -> SKLabelNode {
