@@ -70,10 +70,11 @@ class GameScene: SKScene {
     }
     
     func moveEnemy() {
-        move(node: enemy, to: player.position, completion: moveEnemy)
-        counter += 1
-        scoreLabel.text = "Score: \(counter)"
-        
+        move(node: enemy, to: player.position) { [weak self] in
+            self!.moveEnemy()
+            self!.counter += 1
+            self!.scoreLabel.text = "Score: \(self!.counter)"
+        }
     }
     
     func increaseEnemySize() {
@@ -82,6 +83,8 @@ class GameScene: SKScene {
         let waitAction = SKAction.wait(forDuration: 5.0)
         counter += 1
         scoreLabel.text = "Score: \(counter)"
-        enemy.run(waitAction, completion: increaseEnemySize)
+        enemy.run(waitAction) { [weak self] in
+            self!.increaseEnemySize()
+        }
     }
 }
